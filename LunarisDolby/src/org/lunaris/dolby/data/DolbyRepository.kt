@@ -22,7 +22,8 @@ import kotlinx.coroutines.flow.asStateFlow
 class DolbyRepository(private val context: Context) : AutoCloseable {
 
     private val audioManager = context.getSystemService(AudioManager::class.java)
-    private var dolbyEffect = createDolbyEffect()
+    private val dolbyEffect: DolbyAudioEffect
+        get() = obtainEffect()
     
     private val defaultPrefs = context.getSharedPreferences("dolby_prefs", Context.MODE_PRIVATE)
     private val presetsPrefs = context.getSharedPreferences(DolbyConstants.PREF_FILE_PRESETS, Context.MODE_PRIVATE)
@@ -41,15 +42,6 @@ class DolbyRepository(private val context: Context) : AutoCloseable {
     private var cachedPresets: List<EqualizerPreset>? = null
     private val presetCacheLock = Any()
 
-    private fun createDolbyEffect(): DolbyAudioEffect {
-        return try {
-            DolbyAudioEffect(EFFECT_PRIORITY, audioSession = 0)
-        } catch (e: Exception) {
-            DolbyConstants.dlog(TAG, "Failed to create Dolby effect: ${e.message}")
-            throw e
-        }
-    }
-
     private fun checkEffect() {
         if (isReleased) {
             DolbyConstants.dlog(TAG, "Repository released, skipping effect check")
@@ -59,8 +51,7 @@ class DolbyRepository(private val context: Context) : AutoCloseable {
         try {
             if (!dolbyEffect.hasControl()) {
                 DolbyConstants.dlog(TAG, "Lost audio effect control, recreating")
-                dolbyEffect.release()
-                dolbyEffect = createDolbyEffect()
+                recreateEffect()
                 restoreSavedProfileIfNeeded()
             }
         } catch (e: Exception) {
@@ -75,8 +66,10 @@ class DolbyRepository(private val context: Context) : AutoCloseable {
 
     private fun restoreSavedProfileIfNeeded() {
         val savedProfile = readSavedProfile() ?: return
-        if (dolbyEffect.profile != savedProfile) {
+        // The effect always reads the profile back as 0, so track what was sent instead
+        if (appliedProfile != savedProfile) {
             dolbyEffect.profile = savedProfile
+            appliedProfile = savedProfile
         }
         restoreProfilePreset(savedProfile)
         applyProfileSettings(savedProfile)
@@ -122,7 +115,11 @@ class DolbyRepository(private val context: Context) : AutoCloseable {
 
     fun applySavedState() {
     checkEffect()
-        val enabled = defaultPrefs.getBoolean(DolbyConstants.PREF_ENABLE, false)
+        if (!defaultPrefs.contains(DolbyConstants.PREF_ENABLE)) {
+            // Never toggled yet, keep the state the effect came up with
+            defaultPrefs.edit().putBoolean(DolbyConstants.PREF_ENABLE, dolbyEffect.dsOn).apply()
+        }
+        val enabled = defaultPrefs.getBoolean(DolbyConstants.PREF_ENABLE, true)
         dolbyEffect.dsOn = enabled
         if (enabled) {
             restoreSavedProfileIfNeeded()
@@ -170,7 +167,7 @@ class DolbyRepository(private val context: Context) : AutoCloseable {
         return try {
             checkEffect()
             restoreSavedProfileIfNeeded()
-            dolbyEffect.profile
+            readSavedProfile() ?: 0
         } catch (e: Exception) {
             DolbyConstants.dlog(TAG, "Error getting current profile: ${e.message}")
             0
@@ -183,6 +180,7 @@ class DolbyRepository(private val context: Context) : AutoCloseable {
         try {
             checkEffect()
             dolbyEffect.profile = profile
+            appliedProfile = profile
             defaultPrefs.edit().putString(DolbyConstants.PREF_PROFILE, profile.toString()).apply()
             if (!verifyProfileSaved(profile)) {
                 DolbyConstants.dlog(TAG, "WARNING: Profile may not have been saved correctly!")
@@ -897,11 +895,6 @@ class DolbyRepository(private val context: Context) : AutoCloseable {
         if (!isReleased) {
             DolbyConstants.dlog(TAG, "Releasing repository resources")
             isReleased = true
-            try {
-                dolbyEffect.release()
-            } catch (e: Exception) {
-                DolbyConstants.dlog(TAG, "Error releasing effect: ${e.message}")
-            }
         }
     }
     
@@ -912,6 +905,35 @@ class DolbyRepository(private val context: Context) : AutoCloseable {
     companion object {
         private const val TAG = "DolbyRepository"
         private const val EFFECT_PRIORITY = 100
+
+        // One effect for the whole process: every instance with the same priority steals control
+        // from the others and their writes get dropped
+        private val effectLock = Any()
+        private var sharedEffect: DolbyAudioEffect? = null
+        @Volatile private var appliedProfile = -1
+
+        private fun createEffect(): DolbyAudioEffect {
+            return try {
+                DolbyAudioEffect(EFFECT_PRIORITY, audioSession = 0)
+            } catch (e: Exception) {
+                DolbyConstants.dlog(TAG, "Failed to create Dolby effect: ${e.message}")
+                throw e
+            }
+        }
+
+        private fun obtainEffect(): DolbyAudioEffect = synchronized(effectLock) {
+            sharedEffect ?: createEffect().also { sharedEffect = it }
+        }
+
+        private fun recreateEffect(): DolbyAudioEffect = synchronized(effectLock) {
+            try {
+                sharedEffect?.release()
+            } catch (e: Exception) {
+                DolbyConstants.dlog(TAG, "Error releasing effect: ${e.message}")
+            }
+            appliedProfile = -1
+            createEffect().also { sharedEffect = it }
+        }
         
         private const val BASS_GAIN_MULTIPLIER = 1.4f
         private const val MID_GAIN_MULTIPLIER = 1.3f
