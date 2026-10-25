@@ -53,7 +53,7 @@ fun ProfileCarousel(
         0 to Icons.Default.AutoAwesome,
         1 to Icons.Default.Movie,
         2 to Icons.Default.MusicNote,
-        3 to Icons.Default.SportsEsports,
+        3 to Icons.Default.RecordVoiceOver,
         4 to Icons.Default.Work,
         5 to Icons.Default.Coffee,
         6 to Icons.Default.Favorite

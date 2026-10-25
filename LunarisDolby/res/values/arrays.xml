@@ -10,7 +10,7 @@
         <item>@string/dolby_profile_dynamic</item>
         <item>@string/dolby_profile_video</item>
         <item>@string/dolby_profile_music</item>
-        <item>@string/dolby_profile_game</item>
+        <item>@string/dolby_profile_voice</item>
         <item>@string/dolby_profile_work</item>
         <item>@string/dolby_profile_casual</item>
         <item>@string/dolby_profile_mood</item>
