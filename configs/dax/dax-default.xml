@@ -298,11 +298,16 @@
       <drc-metadata/>
       <reverb-suppression-enable value="false"/>
       <reverb-suppression-amount value="0"/>
+      <advanced-headphone-virtualizer-rendering-config value="103,32568,11164,5090,0,3,3,3"/>
+      <surround-decoder-diffuse-relocating-to-front-amount value="0"/>
+      <advanced-headphone-virtualizer-lr-angle value="45"/>
+      <headphone-virtualizer-mode value="0"/>
       <endpoint_type id="speaker">
         <include preset="ieq_balanced"/>
         <ieq-amount value="6"/>
         <ieq-enable value="false"/>
         <calibration-boost value="0"/>
+        <mi-dialog-enhancer-steering-enable value="false"/>
         <dialog-enhancer-enable value="false"/>
         <dialog-enhancer-amount value="6"/>
         <dialog-enhancer-ducking value="0"/>
@@ -332,6 +337,7 @@
         <ieq-amount value="6"/>
         <ieq-enable value="false"/>
         <calibration-boost value="0"/>
+        <mi-dialog-enhancer-steering-enable value="false"/>
         <dialog-enhancer-enable value="true"/>
         <dialog-enhancer-amount value="4"/>
         <dialog-enhancer-ducking value="0"/>
@@ -361,6 +367,7 @@
         <ieq-amount value="6"/>
         <ieq-enable value="false"/>
         <calibration-boost value="0"/>
+        <mi-dialog-enhancer-steering-enable value="false"/>
         <dialog-enhancer-enable value="false"/>
         <dialog-enhancer-amount value="6"/>
         <dialog-enhancer-ducking value="0"/>
@@ -397,11 +404,16 @@
       <drc-metadata/>
       <reverb-suppression-enable value="false"/>
       <reverb-suppression-amount value="0"/>
+      <advanced-headphone-virtualizer-rendering-config value="103,32568,11164,5090,0,3,3,3"/>
+      <surround-decoder-diffuse-relocating-to-front-amount value="0"/>
+      <advanced-headphone-virtualizer-lr-angle value="45"/>
+      <headphone-virtualizer-mode value="0"/>
       <endpoint_type id="speaker">
         <include preset="ieq_balanced"/>
         <ieq-amount value="7"/>
         <ieq-enable value="true"/>
         <calibration-boost value="0"/>
+        <mi-dialog-enhancer-steering-enable value="false"/>
         <dialog-enhancer-enable value="true"/>
         <dialog-enhancer-amount value="4"/>
         <dialog-enhancer-ducking value="0"/>
@@ -431,6 +443,7 @@
         <ieq-amount value="7"/>
         <ieq-enable value="true"/>
         <calibration-boost value="0"/>
+        <mi-dialog-enhancer-steering-enable value="false"/>
         <dialog-enhancer-enable value="true"/>
         <dialog-enhancer-amount value="4"/>
         <dialog-enhancer-ducking value="0"/>
@@ -460,6 +473,7 @@
         <ieq-amount value="7"/>
         <ieq-enable value="true"/>
         <calibration-boost value="0"/>
+        <mi-dialog-enhancer-steering-enable value="false"/>
         <dialog-enhancer-enable value="true"/>
         <dialog-enhancer-amount value="6"/>
         <dialog-enhancer-ducking value="0"/>
@@ -496,11 +510,16 @@
       <drc-metadata/>
       <reverb-suppression-enable value="false"/>
       <reverb-suppression-amount value="0"/>
+      <advanced-headphone-virtualizer-rendering-config value="103,32568,11164,5090,0,3,3,3"/>
+      <surround-decoder-diffuse-relocating-to-front-amount value="0"/>
+      <advanced-headphone-virtualizer-lr-angle value="45"/>
+      <headphone-virtualizer-mode value="0"/>
       <endpoint_type id="speaker">
         <include preset="ieq_balanced"/>
         <ieq-amount value="6"/>
         <ieq-enable value="false"/>
         <calibration-boost value="0"/>
+        <mi-dialog-enhancer-steering-enable value="false"/>
         <dialog-enhancer-enable value="false"/>
         <dialog-enhancer-amount value="6"/>
         <dialog-enhancer-ducking value="0"/>
@@ -530,6 +549,7 @@
         <ieq-amount value="6"/>
         <ieq-enable value="false"/>
         <calibration-boost value="0"/>
+        <mi-dialog-enhancer-steering-enable value="false"/>
         <dialog-enhancer-enable value="false"/>
         <dialog-enhancer-amount value="6"/>
         <dialog-enhancer-ducking value="0"/>
@@ -559,6 +579,7 @@
         <ieq-amount value="6"/>
         <ieq-enable value="false"/>
         <calibration-boost value="0"/>
+        <mi-dialog-enhancer-steering-enable value="false"/>
         <dialog-enhancer-enable value="false"/>
         <dialog-enhancer-amount value="6"/>
         <dialog-enhancer-ducking value="0"/>
@@ -595,11 +616,16 @@
       <drc-metadata/>
       <reverb-suppression-enable value="false"/>
       <reverb-suppression-amount value="0"/>
+      <advanced-headphone-virtualizer-rendering-config value="103,32568,11164,5090,0,3,3,3"/>
+      <surround-decoder-diffuse-relocating-to-front-amount value="0"/>
+      <advanced-headphone-virtualizer-lr-angle value="45"/>
+      <headphone-virtualizer-mode value="0"/>
       <endpoint_type id="speaker">
         <include preset="ieq_warm"/>
         <ieq-amount value="6"/>
         <ieq-enable value="false"/>
         <calibration-boost value="0"/>
+        <mi-dialog-enhancer-steering-enable value="false"/>
         <dialog-enhancer-enable value="false"/>
         <dialog-enhancer-amount value="6"/>
         <dialog-enhancer-ducking value="0"/>
@@ -629,6 +655,7 @@
         <ieq-amount value="6"/>
         <ieq-enable value="false"/>
         <calibration-boost value="0"/>
+        <mi-dialog-enhancer-steering-enable value="false"/>
         <dialog-enhancer-enable value="false"/>
         <dialog-enhancer-amount value="6"/>
         <dialog-enhancer-ducking value="0"/>
@@ -658,6 +685,7 @@
         <ieq-amount value="6"/>
         <ieq-enable value="false"/>
         <calibration-boost value="0"/>
+        <mi-dialog-enhancer-steering-enable value="false"/>
         <dialog-enhancer-enable value="false"/>
         <dialog-enhancer-amount value="6"/>
         <dialog-enhancer-ducking value="0"/>
@@ -694,11 +722,16 @@
       <drc-metadata/>
       <reverb-suppression-enable value="false"/>
       <reverb-suppression-amount value="9"/>
+      <advanced-headphone-virtualizer-rendering-config value="103,32568,11164,5090,0,3,3,3"/>
+      <surround-decoder-diffuse-relocating-to-front-amount value="0"/>
+      <advanced-headphone-virtualizer-lr-angle value="45"/>
+      <headphone-virtualizer-mode value="0"/>
       <endpoint_type id="speaker">
         <include preset="ieq_balanced"/>
         <ieq-amount value="6"/>
         <ieq-enable value="false"/>
         <calibration-boost value="0"/>
+        <mi-dialog-enhancer-steering-enable value="false"/>
         <dialog-enhancer-enable value="true"/>
         <dialog-enhancer-amount value="4"/>
         <dialog-enhancer-ducking value="0"/>
@@ -728,6 +761,7 @@
         <ieq-amount value="6"/>
         <ieq-enable value="false"/>
         <calibration-boost value="0"/>
+        <mi-dialog-enhancer-steering-enable value="false"/>
         <dialog-enhancer-enable value="true"/>
         <dialog-enhancer-amount value="4"/>
         <dialog-enhancer-ducking value="0"/>
@@ -757,6 +791,7 @@
         <ieq-amount value="6"/>
         <ieq-enable value="false"/>
         <calibration-boost value="0"/>
+        <mi-dialog-enhancer-steering-enable value="false"/>
         <dialog-enhancer-enable value="true"/>
         <dialog-enhancer-amount value="6"/>
         <dialog-enhancer-ducking value="0"/>
@@ -793,11 +828,16 @@
       <drc-metadata/>
       <reverb-suppression-enable value="false"/>
       <reverb-suppression-amount value="9"/>
+      <advanced-headphone-virtualizer-rendering-config value="103,32568,11164,5090,0,3,3,3"/>
+      <surround-decoder-diffuse-relocating-to-front-amount value="0"/>
+      <advanced-headphone-virtualizer-lr-angle value="45"/>
+      <headphone-virtualizer-mode value="0"/>
       <endpoint_type id="speaker">
         <include preset="ieq_balanced"/>
         <ieq-amount value="6"/>
         <ieq-enable value="false"/>
         <calibration-boost value="0"/>
+        <mi-dialog-enhancer-steering-enable value="false"/>
         <dialog-enhancer-enable value="true"/>
         <dialog-enhancer-amount value="5"/>
         <dialog-enhancer-ducking value="0"/>
@@ -827,6 +867,7 @@
         <ieq-amount value="5"/>
         <ieq-enable value="true"/>
         <calibration-boost value="0"/>
+        <mi-dialog-enhancer-steering-enable value="false"/>
         <dialog-enhancer-enable value="true"/>
         <dialog-enhancer-amount value="6"/>
         <dialog-enhancer-ducking value="0"/>
@@ -856,6 +897,7 @@
         <ieq-amount value="6"/>
         <ieq-enable value="false"/>
         <calibration-boost value="0"/>
+        <mi-dialog-enhancer-steering-enable value="false"/>
         <dialog-enhancer-enable value="true"/>
         <dialog-enhancer-amount value="6"/>
         <dialog-enhancer-ducking value="0"/>
@@ -892,11 +934,16 @@
       <drc-metadata/>
       <reverb-suppression-enable value="false"/>
       <reverb-suppression-amount value="9"/>
+      <advanced-headphone-virtualizer-rendering-config value="103,32568,11164,5090,0,3,3,3"/>
+      <surround-decoder-diffuse-relocating-to-front-amount value="0"/>
+      <advanced-headphone-virtualizer-lr-angle value="45"/>
+      <headphone-virtualizer-mode value="0"/>
       <endpoint_type id="speaker">
         <include preset="ieq_balanced"/>
         <ieq-amount value="6"/>
         <ieq-enable value="false"/>
         <calibration-boost value="0"/>
+        <mi-dialog-enhancer-steering-enable value="false"/>
         <dialog-enhancer-enable value="true"/>
         <dialog-enhancer-amount value="6"/>
         <dialog-enhancer-ducking value="0"/>
@@ -926,6 +973,7 @@
         <ieq-amount value="6"/>
         <ieq-enable value="true"/>
         <calibration-boost value="0"/>
+        <mi-dialog-enhancer-steering-enable value="false"/>
         <dialog-enhancer-enable value="true"/>
         <dialog-enhancer-amount value="8"/>
         <dialog-enhancer-ducking value="0"/>
@@ -955,6 +1003,7 @@
         <ieq-amount value="6"/>
         <ieq-enable value="true"/>
         <calibration-boost value="0"/>
+        <mi-dialog-enhancer-steering-enable value="false"/>
         <dialog-enhancer-enable value="false"/>
         <dialog-enhancer-amount value="6"/>
         <dialog-enhancer-ducking value="0"/>
@@ -991,11 +1040,16 @@
       <drc-metadata/>
       <reverb-suppression-enable value="false"/>
       <reverb-suppression-amount value="9"/>
+      <advanced-headphone-virtualizer-rendering-config value="103,32568,11164,5090,0,3,3,3"/>
+      <surround-decoder-diffuse-relocating-to-front-amount value="0"/>
+      <advanced-headphone-virtualizer-lr-angle value="45"/>
+      <headphone-virtualizer-mode value="0"/>
       <endpoint_type id="speaker">
         <include preset="ieq_balanced"/>
         <ieq-amount value="6"/>
         <ieq-enable value="false"/>
         <calibration-boost value="0"/>
+        <mi-dialog-enhancer-steering-enable value="false"/>
         <dialog-enhancer-enable value="true"/>
         <dialog-enhancer-amount value="7"/>
         <dialog-enhancer-ducking value="0"/>
@@ -1025,6 +1079,7 @@
         <ieq-amount value="6"/>
         <ieq-enable value="true"/>
         <calibration-boost value="0"/>
+        <mi-dialog-enhancer-steering-enable value="false"/>
         <dialog-enhancer-enable value="true"/>
         <dialog-enhancer-amount value="9"/>
         <dialog-enhancer-ducking value="0"/>
@@ -1054,6 +1109,7 @@
         <ieq-amount value="6"/>
         <ieq-enable value="false"/>
         <calibration-boost value="0"/>
+        <mi-dialog-enhancer-steering-enable value="false"/>
         <dialog-enhancer-enable value="false"/>
         <dialog-enhancer-amount value="6"/>
         <dialog-enhancer-ducking value="0"/>
@@ -1137,6 +1193,9 @@
       <complex-equalizer-tuning-left value="0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0"/>
       <complex-equalizer-tuning-right value="0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0"/>
       <height-filter-mode value="1"/>
+      <speaker-virtualizer-mode value="2"/>
+      <advanced-speaker-virtualizer-start-bin value="3"/>
+      <advanced-speaker-virtualizer-rendering-config value="16,32568,11164,5090,0,3,3,3"/>
       <output-mode>
         <mix_matrix>
           <element value="0,2,16384,16384"/>
@@ -1233,6 +1292,9 @@
       <complex-equalizer-tuning-left value="0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0"/>
       <complex-equalizer-tuning-right value="0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0"/>
       <height-filter-mode value="1"/>
+      <speaker-virtualizer-mode value="2"/>
+      <advanced-speaker-virtualizer-start-bin value="3"/>
+      <advanced-speaker-virtualizer-rendering-config value="16,32568,11164,5090,0,3,3,3"/>
       <output-mode>
         <mix_matrix>
           <element value="0,2,16384,16384"/>
@@ -1332,6 +1394,9 @@
       <complex-equalizer-tuning-left value="0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0"/>
       <complex-equalizer-tuning-right value="0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0"/>
       <height-filter-mode value="1"/>
+      <speaker-virtualizer-mode value="2"/>
+      <advanced-speaker-virtualizer-start-bin value="3"/>
+      <advanced-speaker-virtualizer-rendering-config value="16,32568,11164,5090,0,3,3,3"/>
       <output-mode>
         <mix_matrix/>
       </output-mode>
@@ -1425,6 +1490,9 @@
       <complex-equalizer-tuning-left value="0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0"/>
       <complex-equalizer-tuning-right value="0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0"/>
       <height-filter-mode value="1"/>
+      <speaker-virtualizer-mode value="2"/>
+      <advanced-speaker-virtualizer-start-bin value="3"/>
+      <advanced-speaker-virtualizer-rendering-config value="16,32568,11164,5090,0,3,3,3"/>
       <output-mode>
         <mix_matrix/>
       </output-mode>
@@ -1516,6 +1584,9 @@
       <complex-equalizer-tuning-left value="0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0"/>
       <complex-equalizer-tuning-right value="0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0"/>
       <height-filter-mode value="0"/>
+      <speaker-virtualizer-mode value="2"/>
+      <advanced-speaker-virtualizer-start-bin value="3"/>
+      <advanced-speaker-virtualizer-rendering-config value="16,32568,11164,5090,0,3,3,3"/>
       <output-mode>
         <mix_matrix/>
       </output-mode>
